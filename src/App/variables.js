@@ -27,6 +27,7 @@ const ilex = {
   color_rosa_radios:'#BA61FF',
   color_rosa_speaking:'#EC5A82',
   color_violeta_speaking:'#8742D5',
+  color_azul_vivo:'#00ccff',
   degradado:(rot, color1, color2, color3) => {
       return `linear-gradient(${rot},${color1},${color2},${color3})`
   },

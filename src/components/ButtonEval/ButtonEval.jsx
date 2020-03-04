@@ -3,9 +3,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import styles from './ButtonEval_styles'
-
+/*
+    mx: String/Number - Margin X 
+*/
 // Componente base
-const ButtonEval_base = ({color ,...props}) => {
+const ButtonEval_base = ({mx, color ,...props}) => {
     return (
         <div {...props}>
             <button className='btn-clean'>
