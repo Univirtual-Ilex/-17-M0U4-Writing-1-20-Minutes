@@ -80,14 +80,12 @@ const Actividad_base = ({staticContext, ...props}) => {
  
     return (
         <Container {...props} bgImage='./src/bg_actividad1.png' h={40}>
-            <ProgressbarContainer>
-                <ProgressBar progress={50} />
-            </ProgressbarContainer>
+            
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Write the correct order of the sentence then press check to verify if it is correct or not' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
             </UiButtonsContainer>
-            <div className='container-content'>
+            <div className='container-content mt'>
                 <MainTitle color={Ilex.violeta2}> COMPLETE THE CONVERSATION WITH THE CORRECT ORDER OF SENTENCES </MainTitle>
             </div>
             <div className='listado'>

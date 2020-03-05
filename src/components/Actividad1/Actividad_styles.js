@@ -29,6 +29,9 @@ const mistyles = css`
 .she{
     color: ${Ilex.violeta2}
 }
+.mt{
+    margin-top: 5em;
+}
 `
 
 export const DraggablesContainer = styled.div`
