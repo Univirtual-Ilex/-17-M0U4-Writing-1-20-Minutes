@@ -19,11 +19,14 @@ import { Input } from './InputWords_styles'
  */
 
 // Componente base
-const InputWords_base = ({w, m, p, ok, err, okfull, errfull, ...props}) => {
+const InputWords_base = ({w, changeCheck, idArr, m, p, ok, err, okfull, errfull, ...props}) => {
     const [inputValue, setInputValue] = useState('')
 
     const updateText = (event) => {
         setInputValue(event.target.value)
+
+        if(changeCheck)
+        	changeCheck(idArr, event.target.value)
     }
     return (
         <div {...props}>

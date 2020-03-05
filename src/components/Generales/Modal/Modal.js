@@ -5,7 +5,7 @@ import { ButtonmodalTo } from '../../ButtonModal'
 import styled from 'styled-components'
 import styles from './Modal_styles'
 
-const ModalBase = ( { w, ok, err, visible,nxtUrl,repeatUrl, ...props } ) => {
+const ModalBase = ( { w, ok, err, finished, visible,nxtUrl,repeatUrl, ...props } ) => {
     const ModalType = () => {
 
         if( ok && err) {
@@ -14,7 +14,7 @@ const ModalBase = ( { w, ok, err, visible,nxtUrl,repeatUrl, ...props } ) => {
             // feedback malo
             return (
                 <div className='content-error error-feedback'>
-                    <p>Try Again</p>
+                    <p>Nice Try!</p>
                     <div>{props.children}</div>
                 </div>
                 
@@ -23,7 +23,7 @@ const ModalBase = ( { w, ok, err, visible,nxtUrl,repeatUrl, ...props } ) => {
             // feedback bueno
             return (
                 <div className='content-ok ok-feedback'>
-                    <p> Great !</p>
+                    <p> Fantastic!</p>
                    <div>{props.children}</div>         
                 </div>)
 
@@ -70,7 +70,8 @@ const ModalBase = ( { w, ok, err, visible,nxtUrl,repeatUrl, ...props } ) => {
 
                     <div className='ilx-modal-footer'>
                         <ButtonmodalTo inactivo href={repeatUrl}>Repeat</ButtonmodalTo>
-                        { !err &&  <ButtonmodalTo href={nxtUrl}> Next </ButtonmodalTo>  }
+                        { !err && !finished &&  <ButtonmodalTo href={nxtUrl}> Next </ButtonmodalTo>  }
+                        {finished && <ButtonmodalTo href={'/'}> Finished </ButtonmodalTo>}
                         
                     </div>
 
