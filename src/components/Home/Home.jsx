@@ -12,7 +12,7 @@ const Home_base = function ({ staticContext, ...props}) { // se le pasan las pro
     return (
         <Container {...props}  row bgImage="src/bg.png">
 
-                    <div className='bloque-izquierdo'>
+                    <div className='bloque-izquierdo entrada-top-Y-2'>
                         <div className='bloque-izquierdo-container'>
                             <ICol mt={2}>
                                 <h1> 20 Minutes </h1>
@@ -22,7 +22,7 @@ const Home_base = function ({ staticContext, ...props}) { // se le pasan las pro
 
                         </div>
                     </div>
-                    <div className='bloque-derecho'>
+                    <div className='bloque-derecho entrada-top-Y-3'>
                         <ICol mt={2}>
                             <figure>
                                 <img src='./src/cover.png' alt='Logo' />    
