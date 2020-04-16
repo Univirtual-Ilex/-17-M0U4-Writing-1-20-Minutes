@@ -83,7 +83,7 @@ const Actividad_base = ({staticContext, ...props}) => {
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Write the correct order of the sentence then press check to verify if it is correct or not' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.reload()} } />
             </UiButtonsContainer>
             <div className='container-content mt'>
                 <MainTitle color={Ilex.violeta2}> COMPLETE THE CONVERSATION WITH THE CORRECT ORDER OF SENTENCES </MainTitle>
@@ -102,7 +102,7 @@ const Actividad_base = ({staticContext, ...props}) => {
                     <div className="itemLine"> <span className="he">Andrés:</span> I have dinner at around 7:00 PM</div>
                     </div>
             </div>
-            <Modal visible={modalFlag} ok={ok} err={err} w={25} repeatUrl={'/actividad1'} finished={ok} />
+            <Modal visible={modalFlag} ok={ok} err={err} w={25} repeatUrl={'#/actividad1'} finished={ok} />
         </Container>
     )
 
