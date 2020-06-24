@@ -82,7 +82,7 @@ const Actividad_base = ({staticContext, ...props}) => {
         <Container {...props} bgImage='./src/bg_actividad1.png' h={40}>
             
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='Write the correct order of the sentence then press check to verify if it is correct or not' />
+                <ButtonUi icon='ilx-ayuda' tooltip='Write the given words in the correct order to make sentences' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.reload()} } />
             </UiButtonsContainer>
             <div className='container-content mt'>

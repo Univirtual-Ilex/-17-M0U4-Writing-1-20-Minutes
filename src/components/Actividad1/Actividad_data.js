@@ -2,7 +2,7 @@ const data = [
 
     {
       "id": 2,
-      "answer": "I wake up at eight o’clock",
+      "answer": "I wake up at eight o'clock",
       "right": 0,
       "status": 0,
     },
@@ -14,7 +14,7 @@ const data = [
     },
     {
       "id": 6,
-      "answer": "I get home at eight o’clock",
+      "answer": "I get home at eight o'clock",
       "right": 0,
       "status": 0,
     },
